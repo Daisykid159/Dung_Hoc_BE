@@ -4,14 +4,11 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-Hoc_BE-4b93c6f5-5699-4fb8-9cdd-88d148608aef</UserSecretsId>
+    <UserSecretsId>aspnet-Web_Xem_Phim-d7074e87-8cef-403d-9da3-1b35a990c42c</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
-  <ItemGroup>
-    <None Remove="Response\" />
-  </ItemGroup>
   <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
   </ItemGroup>
@@ -22,10 +19,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.19" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.19" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.19" />
-    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Response\" />
-  </ItemGroup>
 </Project>
